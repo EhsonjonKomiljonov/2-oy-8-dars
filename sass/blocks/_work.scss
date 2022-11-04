@@ -1,0 +1,166 @@
+.work{
+  padding-bottom: 200px;
+}
+
+.work__title {
+  margin: 0;
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.work__style {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  height: 2px;
+  margin-top: 95px;
+  background-color: #FDD6BA;
+}
+
+.work__style__inners {
+  position: absolute;
+  top: -15px;
+  display: inline-block;
+  width: 100%;
+  max-width: 31px;
+  height: 31px;
+  background-color: #FEFCF7;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+}
+
+.work__style__inners:nth-child(2) {
+  left: 365px;
+}
+
+.work__style__inners:nth-child(3) {
+  right: 0;
+}
+
+.work__list {
+  @include super-flex;
+  flex-direction: row;
+  margin-top: 82px;
+  margin-bottom: 64px;
+}
+
+.work__item {
+  width: 100%;
+  max-width: 285px;
+}
+
+.work__number {
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 72px, 72px, 0);
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+
+.work__subtitle__box {
+  width: 100%;
+  max-width: 255px;
+}
+
+.work__subtitle {
+  margin: 38px 0 42px;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 32px, 36px, 0);
+  color: #333D4B;
+}
+
+.work__text {
+  margin: 0;
+  font-family: 'Barlow';
+  @include fonts (400,16px,26px,0);
+  color: #333D4B;
+}
+
+@include media (780px){
+
+  .work{
+    padding-bottom: 144px;
+  }
+
+  .work__item {
+    width: 100%;
+    max-width: 223px;
+  }
+
+  .work__style{
+    width: 100%;
+    max-width: 467px;
+  }
+
+  .work__style__inners:nth-child(2) {
+    left: 218px;
+  }
+
+  .work__subtitle__box{
+    width: 100%;
+    max-width: 223px;
+  }
+
+  .work__subtitle{
+    @include fonts (900,28px,32px,0);
+  }
+
+  .work__text{
+    @include fonts (400,15px,25px,0)
+  }
+
+  .hero__link--work{
+    padding: 15px 31px;
+    @include fonts (900,18px,25px,0)
+  }
+}
+
+@include media (576px){
+
+  .work{
+    padding-bottom: 120px;
+  }
+
+  .work__title{
+    text-align: center;
+  }
+
+  .work__style{
+    display: none;
+  }
+
+  .work__list{
+    flex-direction: column;
+    margin: 80px 0 80px;
+  }
+
+  .work__item{
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .work__item:not(:last-child){
+    margin-bottom: 56px;
+  }
+
+  .work__subtitle__box{
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .work__number, .work__subtitle, .work__text{
+    display: block;
+    text-align: center;
+  }
+}
+
+@include media (355px){
+  .work__subtitle{
+    @include fonts (900,23px,27px,0)
+  }
+}
