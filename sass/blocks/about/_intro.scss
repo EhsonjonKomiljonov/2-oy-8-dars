@@ -1,0 +1,126 @@
+.intro {
+  padding-bottom: 168px;
+}
+
+.intro__inner {
+  padding: 137px 0 137px 85px;
+  background-image: url('../images/intro-bgi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  border-radius: 10px;
+}
+
+.intro__content {
+  width: 100%;
+  max-width: 445px;
+}
+
+.intro__title {
+  margin: 0 0 24px;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 40px, 48px, 0);
+  color: #FEFCF7;
+}
+
+.intro__text {
+  margin: 0;
+  font-family: 'Barlow';
+  @include fonts (400,16px,26px,0);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7cc;
+}
+
+@include media (1100px){
+  .intro__inner{
+    padding: 120px 0 120px 60px;
+  }
+
+  .intro__content{
+    width: 100%;
+    max-width: 390px;
+  }
+
+  .intro__title{
+    @include fonts (900,33px,40px,0);
+  }
+
+  .intro__text{
+    @include fonts (400,14px,22px,0);
+  }
+}
+
+@include media (950px){
+  .intro__inner{
+    padding: 100px 0 100px 55px;
+  }
+
+  .intro__content{
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .intro__title{
+    @include fonts (900,28px,34px,0);
+  }
+
+  .intro__text{
+    @include fonts (400,13px,20px,0);
+  }
+}
+
+@include media (780px){
+
+  .intro{
+    padding-bottom: 144px;
+  }
+
+  .intro__inner {
+    padding: 118px 0 118px 58px;
+    background-image: url('../images/intro-bgi-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
+
+  .intro__content{
+    width: 100%;
+    max-width: 398px;
+  }
+
+  .intro__title{
+    @include fonts (900,32px,40px,0);
+  }
+
+  .intro__text{
+    @include fonts (400,15px,25px,0);
+  }
+}
+
+@include media (580px){
+  .intro__inner {
+    padding: 111px 0 111px 24px;
+    background-image: url('../images/intro-bgi-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+  }
+
+  .intro__content{
+    width: 100%;
+    max-width: 279px;
+    margin: 0 auto;
+  }
+
+  .intro__title{
+    @include fonts (900,28px,28px,0);
+    text-align: center;
+  }
+
+  .intro__text{
+    @include fonts (400,15px,25px,0);
+    text-align: center;
+  }
+}

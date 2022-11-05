@@ -15,4 +15,12 @@ only screen and (min-resolution: 2dppx) {
     background-image: url('../images/collection-bgi-tablet@2x.png');
     background-image: url('../images/collection-bgi-mobile.png');
   }
+
+  // ABOUT-US HTML
+
+  .intro__inner{
+    background-image: url('../images/intro-bgi@2x.jpg');
+    background-image: url('../images/intro-bgi-tablet@2x.jpg');
+    background-image: url('../images/intro-bgi-mobile@2x.jpg');
+  }
 }
