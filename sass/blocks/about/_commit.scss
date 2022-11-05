@@ -1,0 +1,111 @@
+.commit {
+  padding-bottom: 250px;
+}
+
+.commit__inner {
+  @include super-flex;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.commit__content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.commit__title {
+  margin: 0 0 32px;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 40px, 40px, 0);
+  color: #333D4B;
+}
+
+.commit__text {
+  margin: 0;
+  font-family: 'Barlow';
+  @include fonts (400, 16px, 26px, 0);
+  color: #333D4Bcc;
+}
+
+@include media (1100px) {
+
+  .commit__inner {
+    @include super-flex ($content:space-evenly);
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .commit__title {
+    @include fonts (900, 32px, 32px, 0);
+  }
+
+  .commit-img {
+    width: 100%;
+    max-width: 281px;
+    height: 470px;
+    border-radius: 10px;
+  }
+}
+
+@include media (900px) {
+  .commit__inner {
+    @include super-flex ($content:space-evenly);
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 339px;
+  }
+
+  .commit__title {
+    @include fonts (900, 32px, 32px, 0);
+  }
+
+  .commit__text {
+    @include fonts (400, 13px, 20px, 0);
+  }
+
+}
+
+@include media (730px) {
+
+  .commit__inner {
+    @include super-flex ($content:space-evenly);
+    flex-direction: column;
+  }
+
+  .commit__content {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 48px;
+  }
+
+  .commit__title {
+    @include fonts (900, 32px, 48px, 0);
+  }
+
+  .commit__text {
+    @include fonts (400, 13px, 20px, 0);
+  }
+}
+
+@include media (730px) {
+
+  .commit__content {
+    width: 100%;
+    max-width: 327px;
+  }
+
+  .commit__title {
+    text-align: center;
+  }
+
+  .commit__text {
+    @include fonts (400, 15px, 25px, 0);
+    text-align: center;
+  }
+}
