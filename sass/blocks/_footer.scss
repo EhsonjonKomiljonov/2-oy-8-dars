@@ -31,32 +31,36 @@
   @include super-flex;
 }
 
+.socials__item{
+  position: relative;
+}
+
 .socials__item+.socials__item {
   margin-left: 24px;
 }
 
-.socials__hover:hover>#Path {
+.socials__hover:hover {
   background-color: #FDD6BA;
 }
 
-@include media (900px){
-  .nav--footer{
+@include media (900px) {
+  .nav--footer {
     margin-left: 50px;
   }
 }
 
-@include media (840px){
-  .nav--footer{
+@include media (840px) {
+  .nav--footer {
     margin-left: 30px;
   }
 
-  .nav__item--footer + .nav__item--footer{
+  .nav__item--footer+.nav__item--footer {
     margin-left: 20px;
   }
 }
 
-@include media (800px){
-  .socials__item + .socials__item{
+@include media (800px) {
+  .socials__item+.socials__item {
     margin-left: 15px;
   }
 }

@@ -851,11 +851,15 @@ a {
   justify-content: space-between;
 }
 
+.socials__item {
+  position: relative;
+}
+
 .socials__item + .socials__item {
   margin-left: 24px;
 }
 
-.socials__hover:hover > #Path {
+.socials__hover:hover {
   background-color: #FDD6BA;
 }
 
