@@ -1073,6 +1073,8 @@ a {
   .commit {
     padding-bottom: 150px;
   }
+}
+@media only screen and (max-width: 730px) {
   .commit__content {
     width: 100%;
     max-width: 327px;
