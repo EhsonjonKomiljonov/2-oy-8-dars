@@ -100,8 +100,13 @@
 }
 
 @include media (580px){
+
+  .intro{
+    padding-bottom: 120px;
+  }
+
   .intro__inner {
-    padding: 111px 0 111px 24px;
+    padding: 111px 24px 111px;
     background-image: url('../images/intro-bgi-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -122,5 +127,11 @@
   .intro__text{
     @include fonts (400,15px,25px,0);
     text-align: center;
+  }
+}
+
+@include media (350px){
+  .intro__inner{
+    padding: 90px 20px;
   }
 }

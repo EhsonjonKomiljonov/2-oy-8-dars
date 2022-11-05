@@ -1,5 +1,5 @@
 .commit {
-  padding-bottom: 250px;
+  padding-bottom: 256px;
 }
 
 .commit__inner {
@@ -29,6 +29,10 @@
 }
 
 @include media (1100px) {
+
+  .commit{
+    margin-bottom: 313px;
+  }
 
   .commit__inner {
     @include super-flex ($content:space-evenly);
@@ -91,9 +95,11 @@
   .commit__text {
     @include fonts (400, 13px, 20px, 0);
   }
-}
 
-@include media (730px) {
+  .commit{
+    padding-bottom: 150px;
+  }
+
 
   .commit__content {
     width: 100%;
@@ -107,5 +113,24 @@
   .commit__text {
     @include fonts (400, 15px, 25px, 0);
     text-align: center;
+  }
+}
+
+@include media (580px){
+
+  .commit{
+    padding-bottom: 120px;
+  }
+
+  .commit-img{
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+  }
+}
+
+@include media (330px){
+  .commit__title{
+    @include fonts (900,28px,40px,0);
   }
 }
