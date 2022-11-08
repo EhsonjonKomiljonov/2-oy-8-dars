@@ -1,0 +1,123 @@
+.headquarter {
+  padding-bottom: 168px;
+}
+
+.headquarter__title {
+  margin: 0;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 24px, 32px, 0);
+  color: #83888F;
+}
+
+.headquarter__list {
+  @include super-flex;
+  margin-top: 72px;
+}
+
+.headquarter__item {
+  flex-shrink: 1;
+}
+
+.headquarter__item:nth-child(1) {
+  width: 100%;
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.headquarter__item:nth-child(1)::before {
+  display: block;
+  width: 41px;
+  height: 49px;
+  margin-bottom: 46px;
+  background-image: url('../images/united-kingdom.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.headquarter__item:nth-child(2)::before {
+  display: block;
+  width: 52px;
+  height: 50px;
+  margin-bottom: 46px;
+  background-image: url('../images/canada.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.headquarter__item:nth-child(3)::before {
+  display: block;
+  width: 44px;
+  height: 49px;
+  margin-bottom: 46px;
+  background-image: url('../images/australia.svg');
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.headquarter__subtitle {
+  margin: 0 0 24px;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 32px, 36px, 0);
+  color: #333D4B;
+}
+
+.strategies__desc {
+  margin: 0;
+  font-family: 'Barlow';
+  @include fonts (400,16px,26px,0);
+  color: #333D4B;
+}
+
+@include media (930px){
+
+  .headquarter{
+    padding-bottom: 144px;
+  }
+
+  .headquarter__item:nth-child(1) {
+    width: 100%;
+    max-width: 210px;
+  }
+
+  .headquarter__subtitle{
+    margin-bottom: 21px;
+    @include fonts (900,24px,32px,0);
+  }
+}
+
+@include media (600px){
+
+  .headquarter{
+    padding-bottom: 120px;
+  }
+
+  .headquarter__title{
+    text-align: center;
+  }
+
+  .headquarter__list{
+    flex-direction: column;
+  }
+
+  .headquarter__item{
+    width: 100%;
+    max-width: 327px !important;
+    margin-bottom: 80px;
+  }
+
+  .headquarter__item::before{
+    margin: 0 auto;
+  }
+
+  .headquarter__subtitle{
+    margin-bottom: 22px;
+    @include fonts (900,28px,36px,0);
+    text-align: center;
+  }
+
+  .strategies__desc{
+    text-align: center;
+  }
+}

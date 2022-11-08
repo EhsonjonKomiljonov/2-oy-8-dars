@@ -1,0 +1,144 @@
+.quality {
+  padding-bottom: 168px;
+}
+
+.quality__inner {
+  position: relative;
+  @include super-flex ($content: flex-start);
+  padding: 88px 0 176px 85px;
+  background-image: url('../images/choose-bgi.png');
+  background-size: 100% 474px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 10px;
+}
+
+.quality__content {
+  width: 100%;
+  max-width: 540px;
+}
+
+.quality__title {
+  margin: 0 0 32px;
+  font-family: 'Fraunces 9pt';
+  @include fonts (900, 40px, 48px, 0);
+  color: #FEFCF7;
+}
+
+.quality__text {
+  margin: 0;
+  font-family: 'Barlow';
+  @include fonts (400, 16px, 26px, 0);
+  color: #FEFCF7cc;
+}
+
+.quality-img {
+  position: absolute;
+  right: 85px;
+  top: -85px;
+  border-radius: 10px;
+}
+
+@include media (1250px) {
+
+  .quality__inner {
+    padding: 88px 0 176px 60px;
+  }
+
+  .quality__content {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .quality__title {
+    @include fonts (900, 33px, 37px, 0)
+  }
+
+  .quality-img {
+    right: 60px;
+  }
+}
+
+@include media (1090px) {
+
+  .quality{
+    padding-bottom: 144px;
+  }
+
+  .quality__inner {
+    width: 100%;
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 224px 74px 67px;
+    background-size: 100% 488px;
+  }
+
+  .quality__content {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .quality__title {
+    margin-bottom: 24px;
+  }
+
+  .quality__title,
+  .quality__text {
+    text-align: center;
+  }
+
+  .quality-img {
+    top: -160px;
+    right: 58px;
+    width: 100%;
+    max-width: 573px;
+    height: 320px;
+  }
+}
+
+@include media (730px) {
+  .quality-img {
+    right: 50px;
+  }
+}
+
+@include media (710px) {
+  .quality-img {
+    right: 40px;
+  }
+}
+
+@include media (690px) {
+
+  .quality{
+    padding-bottom: 120px;
+  }
+
+  .quality__inner {
+    width: 100%;
+    max-width: 327px;
+    padding: 142px 24px 61px;
+    background-size: 100% 509px;
+  }
+
+  .quality__content{
+    width: 100%;
+    max-width: 279px;
+  }
+
+  .quality__title{
+    @include fonts (900,28px,28px,0);
+  }
+
+  .quality__text{
+    @include fonts (400,15px,25px,0);
+  }
+
+  .quality-img {
+    width: 100%;
+    max-width: 279px;
+    height: 156px;
+    top: -78px;
+    right: 24px;
+  }
+}
