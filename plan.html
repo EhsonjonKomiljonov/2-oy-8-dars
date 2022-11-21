@@ -11,6 +11,17 @@
   <header class="site-header">
     <div class="container">
       <div class="site-header__inner">
+        <div>
+          <input class="visually-hidden" type="checkbox" id="menu" />
+          <div class="menu">
+            <div class="menu__links__box">
+              <a class="menu__links" href="./index.html">Home</a>
+              <a class="menu__links" href="./about.html">About Us</a>
+              <a class="menu__links" href="./plan.html">Create Your Plan</a>
+            </div>
+          </div>
+          <label for="menu" id="bgm"></label>
+        </div>
         <a class="logo" href="./index.html">
           <picture>
             <source
@@ -37,7 +48,13 @@
             </li>
           </ul>
         </nav>
-        <button class="site-header__menu"></button>
+        <label class="menu-label" for="menu">
+          <img
+            class="site-header__menu"
+            src="./images/menu.svg"
+            alt="menu switch button"
+          />
+        </label>
       </div>
     </div>
   </header>
