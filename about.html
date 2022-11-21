@@ -12,6 +12,17 @@
     <header class="site-header">
       <div class="container">
         <div class="site-header__inner">
+          <div>
+            <input class="visually-hidden" type="checkbox" id="menu" />
+            <div class="menu">
+              <div class="menu__links__box">
+                <a class="menu__links" href="./index.html">Home</a>
+                <a class="menu__links" href="./about.html">About Us</a>
+                <a class="menu__links" href="./plan.html">Create Your Plan</a>
+              </div>
+            </div>
+            <label for="menu" id="bgm"></label>
+          </div>
           <a class="logo" href="./index.html">
             <picture>
               <source
@@ -38,7 +49,13 @@
               </li>
             </ul>
           </nav>
-          <button class="site-header__menu"></button>
+          <label class="menu-label" for="menu">
+            <img
+              class="site-header__menu"
+              src="./images/menu.svg"
+              alt="menu switch button"
+            />
+          </label>
         </div>
       </div>
     </header>
@@ -62,15 +79,30 @@
         <div class="container">
           <div class="commit__inner">
             <picture>
-              <source media="(max-width: 580px)" srcset="./images/commit-img-mobile.jpg 1x, ./images/commit-img-mobile@2x.jpg 2x">
-              <source media="(max-width: 780px)" srcset="./images/commit-img-tablet.jpg 1x, ./images/commit-img-tablet@2x.jpg 2x">
+              <source
+                media="(max-width: 580px)"
+                srcset="
+                  ./images/commit-img-mobile.jpg    1x,
+                  ./images/commit-img-mobile@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 780px)"
+                srcset="
+                  ./images/commit-img-tablet.jpg    1x,
+                  ./images/commit-img-tablet@2x.jpg 2x
+                "
+              />
               <img
-              class="commit-img"
-              src="./images/commit-img.jpg"
-              srcset="./images/commit-img.jpg 1x, ./images/commit-img@2x.jpg 2x"
-              width="445"
-              height="520"
-              alt="Our commitment"
+                class="commit-img"
+                src="./images/commit-img.jpg"
+                srcset="
+                  ./images/commit-img.jpg    1x,
+                  ./images/commit-img@2x.jpg 2x
+                "
+                width="445"
+                height="520"
+                alt="Our commitment"
               />
             </picture>
             <div class="commit__content">
@@ -97,32 +129,47 @@
         <div class="container">
           <div class="quality__inner">
             <div class="quality__content">
-              <h2 class="quality__title">
-                Uncompromising quality
-              </h2>
+              <h2 class="quality__title">Uncompromising quality</h2>
               <p class="quality__text">
-                Although we work with growers who pay close attention to all stages of harvest and processing, we employ, on our end, a rigorous quality control program to avoid over-roasting or baking the coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast consistent, user-friendly coffee, so that brewing is easy and enjoyable.
+                Although we work with growers who pay close attention to all
+                stages of harvest and processing, we employ, on our end, a
+                rigorous quality control program to avoid over-roasting or
+                baking the coffee dry. Every bag of coffee is tagged with a
+                roast date and batch number. Our goal is to roast consistent,
+                user-friendly coffee, so that brewing is easy and enjoyable.
               </p>
             </div>
             <picture>
-              <source media="(max-width: 1090px)" srcset="./images/quality-tablet-img.jpg 1x, ./images/quality-tablet-img@2x.jpg 2x">
-              <img class="quality-img" src="./images/quality-img.jpg" srcset="./images/quality-img.jpg 1x, ./images/quality-img@2x.jpg 2x" alt="Uncompromising quality">
+              <source
+                media="(max-width: 1090px)"
+                srcset="
+                  ./images/quality-tablet-img.jpg    1x,
+                  ./images/quality-tablet-img@2x.jpg 2x
+                "
+              />
+              <img
+                class="quality-img"
+                src="./images/quality-img.jpg"
+                srcset="
+                  ./images/quality-img.jpg    1x,
+                  ./images/quality-img@2x.jpg 2x
+                "
+                alt="Uncompromising quality"
+              />
             </picture>
-            </div>
           </div>
+        </div>
       </section>
       <section class="headquarter">
         <div class="container">
           <div class="headquarter__inner">
-            <h2 class="headquarter__title">
-              Our headquarters
-            </h2>
+            <h2 class="headquarter__title">Our headquarters</h2>
             <ul class="headquarter__list">
               <li class="headquarter__item">
                 <h3 class="headquarter__subtitle">United Kingdom</h3>
                 <ul class="headquarter__item__list strategies">
                   <li class="strategies__item">
-                    <p class="strategies__desc">68  Asfordby Rd</p>
+                    <p class="strategies__desc">68 Asfordby Rd</p>
                   </li>
                   <li class="strategies__item">
                     <p class="strategies__desc">Alcaston</p>
@@ -139,7 +186,7 @@
                 <h3 class="headquarter__subtitle">Canada</h3>
                 <ul class="headquarter__item__list strategies">
                   <li class="strategies__item">
-                    <p class="strategies__desc">1528  Eglinton Avenue</p>
+                    <p class="strategies__desc">1528 Eglinton Avenue</p>
                   </li>
                   <li class="strategies__item">
                     <p class="strategies__desc">Toronto</p>
